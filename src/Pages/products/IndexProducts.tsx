@@ -1,7 +1,9 @@
 
 function IndexProducts() {
   return (
-    <div>IndexProducts</div>
+    <div>
+      
+    </div>
   )
 }
 
