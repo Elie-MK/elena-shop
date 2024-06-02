@@ -6,7 +6,9 @@ function IndexLayout() {
   return (
     <>
     <NavBar />
+   
       <Outlet />
+
     <Footer />
     </>
   )

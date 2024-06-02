@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 function NavBar() {
   return (
     <div className="grid grid-cols-3 px-3 py-3 shadow-lg justify-between items-center">
-      <ul className="flex items-center justify-center gap-10">
+      <ul className="flex items-center justify-center gap-5">
         <li className="text-lg">
           <NavLink
             to={"product/homme"}
@@ -30,12 +30,20 @@ function NavBar() {
             Accessoires
           </NavLink>
         </li>
+        <li className="text-lg">
+          <NavLink
+            to={"product/chaussures"}
+            className={({ isActive }) => (isActive ? "font-bold" : "")}
+          >
+            Chaussures
+          </NavLink>
+        </li>
       </ul>
       <div className="flex justify-center">
         <NavLink to={"/"}>
           <img
             className="w-20 rounded-xl"
-            src="assets/elenashop-logo.png"
+            src="/assets/elenashop-logo.png"
             alt="Elena shop logo"
           />
         </NavLink>
