@@ -23,32 +23,22 @@ function App() {
             {
               path:'homme',
               element:<IndexProducts />,
-              children:[
-                {
-                  path:':id',
-                  element:<Details />
-                }
-              ]
             },
             {
               path:'femme',
               element:<IndexProducts />,
-              children:[
-                {
-                  path:':id',
-                  element:<Details />
-                }
-              ]
             },
             {
               path:'accessoires',
               element:<IndexProducts />,
-              children:[
-                {
-                  path:':id',
-                  element:<Details />
-                }
-              ]
+            },
+            {
+              path:'chaussures',
+              element:<IndexProducts />,
+            },
+            {
+              path:'detail/:idProduct',
+              element:<Details />
             },
             {
               path:'checkout', 
