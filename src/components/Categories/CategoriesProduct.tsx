@@ -17,8 +17,10 @@ function CategoriesProduct({title, datas}:{title:string, datas:productItem[]}) {
         </div>
         <div className="my-4 grid grid-cols-5">
             {
-                datas.map(({title, price, img})=>
-                    <CardProduct titleItem={title} price={price} image={img[0]} />
+                datas.map(({title, price, img, id})=>
+                    <Link to={`/product/detail/${id}`}>
+                        <CardProduct titleItem={title} price={price} image={img[0]} />
+                    </Link>
                 )
             }
         </div>
