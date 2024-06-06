@@ -53,7 +53,7 @@ export const datasProducts:DummyDB[] = [
             }, 
             {
                 id:3061676, 
-                title:"T-shirt manches courtes molleton interlock effet délavé bord-côte", 
+                title:"T-shirt manches courtes molleton ", 
                 price:100,
                 img:[
                   "https://static.bershka.net/4/photos2/2024/V/0/2/p/2864/732/800/94b4b7a4f588e34598829fb1c7d267b5-2864732800_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium", 
