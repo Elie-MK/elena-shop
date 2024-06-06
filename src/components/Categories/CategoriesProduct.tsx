@@ -18,7 +18,7 @@ function CategoriesProduct({title, datas}:{title:string, datas:productItem[]}) {
         <div className="my-4 grid grid-cols-5">
             {
                 datas.map(({title, price, img, id})=>
-                    <Link to={`/product/detail/${id}`}>
+                    <Link to={`/product/detail/${id}`} key={id}>
                         <CardProduct titleItem={title} price={price} image={img[0]} />
                     </Link>
                 )

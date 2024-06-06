@@ -33,7 +33,7 @@ function IndexProducts() {
             {
                 datasProducts.filter(type => type.type == currentPath).map(({datas})=>
                   datas.map(({title, price, img, id})=>
-                    <Link to={`/product/detail/${id}`}>
+                    <Link to={`/product/detail/${id}`} key={id}>
                       <CardProduct titleItem={title} price={price} image={img[0]} />
                     </Link>
                   )

@@ -2,7 +2,11 @@ import { IoBagOutline } from "react-icons/io5";
 import { CiUser } from "react-icons/ci";
 import { NavLink } from "react-router-dom";
 
+import { useAppSelector } from "../store/store";
+
 function NavBar() {
+  const selector = useAppSelector((state)=>state.cart)
+  
   return (
     <div className="grid grid-cols-3 px-3 py-3 shadow-lg justify-between items-center">
       <ul className="flex items-center justify-center gap-5">
@@ -52,7 +56,7 @@ function NavBar() {
         <NavLink to={"product/checkout"}>
           <div>
             <span className=" absolute text-xs bg-red-500 text-white rounded-full px-2 py-1 ml-5 mt-3">
-              0
+              {selector.cart.length}
             </span>
             <IoBagOutline size={35} />
           </div>

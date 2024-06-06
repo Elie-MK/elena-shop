@@ -4,6 +4,8 @@ import IndexLayout from "./Layout/IndexLayout"
 import IndexProducts from "./Pages/products/IndexProducts"
 import Details from "./Pages/products/Details"
 import Checkout from "./Pages/products/Checkout"
+import { Provider } from "react-redux"
+import { store } from "./store/store"
 
 
 function App() {
@@ -52,7 +54,9 @@ function App() {
   
 
   return (
-    <RouterProvider router={routes}></RouterProvider>
+    <Provider store={store}>
+      <RouterProvider router={routes}></RouterProvider>
+    </Provider>
   )
 }
 

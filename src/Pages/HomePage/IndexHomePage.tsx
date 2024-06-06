@@ -12,7 +12,9 @@ function IndexHomePage() {
         <div>
           {
             datasProducts.map(({type, datas})=>
-              <CategoriesProduct title={type} datas={datas}/>
+              <div key={type}>
+                <CategoriesProduct title={type} datas={datas} />
+              </div> 
             )
           }
         </div>
