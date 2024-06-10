@@ -25,7 +25,7 @@ function IndexProducts() {
 
         <div className="flex justify-between items-center">
           <h1 className="font-bold text-2xl">{currentPath.toUpperCase()}</h1>
-          <div>Search</div>
+          {/* <div>Search</div> */}
         </div>
 
         <div>
