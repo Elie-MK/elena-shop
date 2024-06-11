@@ -3,7 +3,7 @@ export interface user {
     name: string
     email: string
     password: string
-    isAdmin: string
+    isAdmin: boolean
 }
 
 export const UsersDummy:user[] = [
@@ -12,13 +12,13 @@ export const UsersDummy:user[] = [
         name: 'admin',
         email: 'admin@admin.com', 
         password: 'admin',
-        isAdmin: 'true'
+        isAdmin: true
     }, 
     {
         id:2, 
         name: 'Elena',
         email: 'elena@email.com', 
         password:"123456", 
-        isAdmin: 'false'
+        isAdmin: false
     }
 ]

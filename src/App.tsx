@@ -1,11 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { Provider } from "react-redux"
+
 import IndexHomePage from "./Pages/HomePage/IndexHomePage"
 import IndexLayout from "./Layout/IndexLayout"
 import IndexProducts from "./Pages/products/IndexProducts"
 import Details from "./Pages/products/Details"
 import Checkout from "./Pages/products/Checkout"
-import { Provider } from "react-redux"
 import { store } from "./store/store"
+import Login, { action as LoginAction } from "./Pages/auth/Login"
+import SignUp, { action as SignupAction } from "./Pages/auth/SignUp"
+import NotFoundPage from "./Pages/NotFoundPage"
+import IndexAdmin from "./Pages/Admin/IndexAdmin"
 
 
 function App() {
@@ -14,9 +19,10 @@ function App() {
     {
       path:'/',
       element:<IndexLayout />,
+      errorElement:<NotFoundPage />, 
       children : [
         {
-          path:'/', 
+          index:true, 
           element:<IndexHomePage />
         },
         {
@@ -47,9 +53,24 @@ function App() {
               element:<Checkout />
             }
           ]
+        }, 
+        {
+          path:'/dashboard',
+          element:<IndexAdmin />
         }
       ]
-    }
+    }, 
+    {
+      path:'/login',
+      element:<Login />, 
+      action:LoginAction
+    },
+    {
+      path:'/signup',
+      element:<SignUp />,
+     action:SignupAction
+    }, 
+  
   ])
   
 
