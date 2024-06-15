@@ -23,8 +23,8 @@ function CheckoutCard({img, title, price, id, qte}:{img:string, title:string, pr
         <Button onClick={()=>dispatch(addToCart({id} as productItem))} className="text-lg cursor-pointer font-bold bg-gray-900 h-7 px-2 text-white flex items-center justify-center ">+</Button>
       </div> 
       <div className="flex items-center justify-between">
-        <p className="text-lg">Quantity: {qte}</p>
-        <p className="text-lg">Price: { price },00 TND</p>
+        <p className="text-lg">Quantité: {qte}</p>
+        <p className="text-lg">Prix: { price },00 TND</p>
       </div>
     </div>
   </div>
