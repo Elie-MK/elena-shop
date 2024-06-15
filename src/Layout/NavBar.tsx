@@ -87,7 +87,7 @@ function NavBar() {
         {
           !user? <NavLink to={"/login"}>
           <CiUser size={35} />
-        </NavLink>:<span className="text-xl font-semibold">{user.name.toUpperCase()}</span>
+        </NavLink>:<span className="text-lg font-semibold">{user.name.toUpperCase()}</span>
         }
         {
           user?.isAdmin && <NavLink to={"/dashboard"}>
