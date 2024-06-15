@@ -1,5 +1,7 @@
+import Billing from "@/components/Billing";
 import CheckoutCard from "@/components/Categories/CheckoutCard";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import { useAppSelector } from "@/store/store";
 import { IoCard } from "react-icons/io5";
 
@@ -39,26 +41,33 @@ function Checkout() {
         <h1 className="text-2xl font-bold">TOTAL</h1>
         <div className="my-4">
           <div className="flex items-center gap-10 ">
-            <h1 className="font-bold text-xl">Sub-Total :</h1>
+            <h1 className="font-bold text-xl">Sous-Total :</h1>
             <span className="font-medium text-xl"> {totalPrice}.00 TND </span>
           </div>
           <div className="flex items-center gap-14 my-1">
-            <h1 className="font-bold text-xl">Delivery : </h1>
-            <span className="font-medium text-xl">Free</span>
+            <h1 className="font-bold text-xl">Livraison : </h1>
+            <span className="font-medium text-xl">Gratuit</span>
           </div>
           <div className="flex items-center gap-8 ">
-            <h1 className="font-bold text-xl">Total Price : </h1>
+            <h1 className="font-bold text-xl">Prix total : </h1>
             <span className="font-medium text-xl">{totalPrice}.00 TND</span>
           </div>
         </div>
         <div className="flex justify-center my-10">
-          <Button
-            variant="outline"
-            className="text-lg w-80 border-black hover:bg-gray-900 hover:text-white transition-all duration-500"
-          >
-            <IoCard className="mx-2" size={25} />
-            Checkout
-          </Button>
+          <Dialog>
+            <DialogTrigger>
+              <Button
+                variant="outline"
+                className="text-lg w-80 border-black hover:bg-gray-900 hover:text-white transition-all duration-500"
+              >
+                <IoCard className="mx-2" size={25} />
+                Acheter
+              </Button>
+            </DialogTrigger>
+            <DialogContent>
+              <Billing />
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
     </div>

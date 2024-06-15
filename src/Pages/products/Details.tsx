@@ -87,7 +87,7 @@ function Details() {
                 className="text-lg border-black hover:bg-gray-900 hover:text-white transition-all duration-500"
               >
                 <BiShoppingBag className="mx-2" size={25} />
-                Add
+                Ajouter
               </Button>
             </div>
           </div>
