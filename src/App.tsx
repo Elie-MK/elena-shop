@@ -10,7 +10,7 @@ import { store } from "./store/store"
 import Login, { action as LoginAction } from "./Pages/auth/Login"
 import SignUp, { action as SignupAction } from "./Pages/auth/SignUp"
 import NotFoundPage from "./Pages/NotFoundPage"
-import IndexAdmin from "./Pages/Admin/IndexAdmin"
+import IndexAdmin, { loader as AdminLoader } from "./Pages/Admin/IndexAdmin"
 
 
 function App() {
@@ -56,7 +56,8 @@ function App() {
         }, 
         {
           path:'/dashboard',
-          element:<IndexAdmin />
+          element:<IndexAdmin />,
+          loader:AdminLoader 
         }
       ]
     }, 
