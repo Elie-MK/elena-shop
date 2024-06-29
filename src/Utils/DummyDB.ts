@@ -25,6 +25,24 @@ export const datasProducts:DummyDB[] = [
                 ]
             }, 
             {
+                id:3166076, 
+                title:"Complet veste bleu-ciel", 
+                price:160,
+                img:[
+                    "https://i.pinimg.com/originals/71/f6/87/71f6870024eea02c799674052a8aa86c.jpg", 
+                    "https://i.pinimg.com/originals/71/f6/87/71f6870024eea02c799674052a8aa86c.jpg"
+                ]
+            }, 
+            {
+                id:3156076, 
+                title:"Pastel outfit", 
+                price:160,
+                img:[
+                    "https://i.pinimg.com/564x/ee/61/cd/ee61cd74672424fb093a8d2c2c820aa1.jpg", 
+                    "https://i.pinimg.com/564x/ee/61/cd/ee61cd74672424fb093a8d2c2c820aa1.jpg"
+                ]
+            }, 
+            {
                 id:3068176, 
                 title:"Jeans loose",
                 price:130,
@@ -109,6 +127,60 @@ export const datasProducts:DummyDB[] = [
                 img:[
                     "https://static.bershka.net/4/photos2/2024/I/0/1/p/0134/782/752/db67fa14d6f72a9b9b4e07b2869c606a-0134782752_1_1_0.jpg?imwidth=850&impolicy=bershka-itxmedium", 
                     "https://static.bershka.net/4/photos2/2024/I/0/1/p/0134/782/752/fb2f211bbc6f40ecc0735f4ebf634249-0134782752_2_4_0.jpg?imwidth=850&impolicy=bershka-itxmedium"
+                ]
+            }, 
+            {
+                id:3063191, 
+                title:"Robe de soirée fashion", 
+                price:120,
+                img:[
+                    "https://i.pinimg.com/originals/76/0d/0f/760d0f62c949ea2fb82b19746eb27cb7.jpg", 
+                    "https://i.pinimg.com/originals/76/0d/0f/760d0f62c949ea2fb82b19746eb27cb7.jpg"
+                ]
+            }, 
+            {
+                id:3163191,  
+                title:"Robe de soirée fashion avec fente", 
+                price:100,
+                img:[
+                    "https://i.pinimg.com/originals/84/a7/bc/84a7bc3b87ee9430efc90274f1682568.jpg", 
+                    "https://i.pinimg.com/originals/84/a7/bc/84a7bc3b87ee9430efc90274f1682568.jpg"
+                ]
+            }, 
+            {
+                id:3113191,  
+                title:"Fashion robe noir", 
+                price:140,
+                img:[
+                    "https://i.pinimg.com/originals/0a/cd/f9/0acdf9a7842396172868a300444b13ca.jpg", 
+                    "https://i.pinimg.com/originals/0a/cd/f9/0acdf9a7842396172868a300444b13ca.jpg"
+                ]
+            }, 
+            {
+                id:3113181,  
+                title:"Robe de bal formelle chic et moderne, asymétrique épaule dénudée, perlée et drapée, avec superposition", 
+                price:240,
+                img:[
+                    "https://guiuu.com/cdn/shop/files/G3986-Chic_ModernSheathOneShoulderBeadedandDrapedFormalPartyPromDresswithOverlay_2.jpg?v=1703659613&width=493", 
+                    "https://guiuu.com/cdn/shop/files/G3986-Chic_ModernSheathOneShoulderBeadedandDrapedFormalPartyPromDresswithOverlay_2.jpg?v=1703659613&width=493"
+                ]
+            }, 
+            {
+                id:4113181,  
+                title:"Robe de bal longue formelle chic et moderne à épaules dénudées et plis perlés", 
+                price:240,
+                img:[
+                    "https://guiuu.com/cdn/shop/files/G3068_1.jpg?v=1696743072&width=493", 
+                    "https://guiuu.com/cdn/shop/files/G3068_1.jpg?v=1696743072&width=493"
+                ]
+            }, 
+            {
+                id:4213181,  
+                title:"Miabel - Robe de bal sirène asymétrique asymétrique avec perles", 
+                price:280,
+                img:[
+                    "https://img.fantaskycdn.com/e230917fc88e58ef7d5b70a41ec9de1b_1080x.jpg", 
+                    "https://img.fantaskycdn.com/e230917fc88e58ef7d5b70a41ec9de1b_1080x.jpg"
                 ]
             }, 
            
