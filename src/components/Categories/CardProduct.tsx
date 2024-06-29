@@ -5,7 +5,8 @@ function CardProduct({image, titleItem, price}:{image:string, titleItem:string, 
     <section className="w-60 h-fit group">
         <div className="relative overflow-hidden">
             <img
-            className="rounded-lg"
+            
+            className="rounded-lg w-60 h-60 object-cover "
             src={image}
             alt="card photo"
             />
